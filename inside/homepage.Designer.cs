@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homepage));
             this.fankui = new System.Windows.Forms.Button();
             this.tuichuxitong = new System.Windows.Forms.Button();
             this.zuzhi = new System.Windows.Forms.Button();
@@ -75,12 +76,14 @@
             // 
             // zuzhi
             // 
+            this.zuzhi.BackColor = System.Drawing.Color.Transparent;
+            this.zuzhi.ForeColor = System.Drawing.Color.Black;
             this.zuzhi.Location = new System.Drawing.Point(6, 24);
             this.zuzhi.Name = "zuzhi";
             this.zuzhi.Size = new System.Drawing.Size(93, 33);
             this.zuzhi.TabIndex = 14;
             this.zuzhi.Text = "组织架构";
-            this.zuzhi.UseVisualStyleBackColor = true;
+            this.zuzhi.UseVisualStyleBackColor = false;
             this.zuzhi.Click += new System.EventHandler(this.zuzhi_Click);
             // 
             // xiugaimima
@@ -133,12 +136,13 @@
             // 
             // renshi
             // 
+            this.renshi.BackColor = System.Drawing.Color.Transparent;
             this.renshi.Location = new System.Drawing.Point(6, 63);
             this.renshi.Name = "renshi";
             this.renshi.Size = new System.Drawing.Size(93, 33);
             this.renshi.TabIndex = 7;
             this.renshi.Text = "人事管理";
-            this.renshi.UseVisualStyleBackColor = true;
+            this.renshi.UseVisualStyleBackColor = false;
             this.renshi.Click += new System.EventHandler(this.renshi_Click);
             // 
             // zhaopin
@@ -251,12 +255,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1143, 716);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.rizhi);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "homepage";
             this.Text = "人力资源管理系统";
             this.Load += new System.EventHandler(this.homepage_Load);

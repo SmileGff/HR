@@ -52,5 +52,15 @@ namespace HR.inside.manage
             }
 
         }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripComboBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

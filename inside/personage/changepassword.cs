@@ -63,7 +63,7 @@ namespace HR.inside.personage
                             //将当前用户的登录信息添加到DataGridView里面
                             login login = new login();
                             login.Show();
-                            this.Close();
+
                         }
                     }
                 }
@@ -94,7 +94,6 @@ namespace HR.inside.personage
             conn = new SqlConnection(connStr);
             conn.Open();
         }
-
 
     }
 }
