@@ -88,13 +88,13 @@ namespace HR.inside
         {
             login main = new login();
             main.Show();
-            this.Close();
+            Close();
            
         }
         //退出系统
         private void tuichuxitong_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void kaoqin_Click(object sender, EventArgs e)

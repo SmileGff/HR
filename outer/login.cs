@@ -45,7 +45,7 @@ namespace HR.outer
                         {
                             //则将第1条 密码 赋给 字符串pwd  ,并且依次往后读取 所有的密码
                             //Trim()方法为移除字符串前后的空白
-                            string pwd = sdr.GetString(0).Trim();
+                            string pwd = sdr["password"].ToString();
                             //如果 文本框中输入的密码 ==数据库中的密码
                             //则将对应该用户名下的 第一个字段 即使密码(MUserPwd为select的第一个字段) 赋给 字符串pwd  ,并且依次往后读取 所有的密码
                             //Trim()方法为移除字符串前后的空

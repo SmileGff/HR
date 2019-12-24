@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using HR.outer;
 
+
 namespace HR.inside.personage
 {
     public partial class changepassword : UserControl
@@ -59,11 +60,7 @@ namespace HR.inside.personage
                         }
                         else
                         {
-                            MessageBox.Show("密码修改成功!正在返回登录界面");
-                            //将当前用户的登录信息添加到DataGridView里面
-                            login login = new login();
-                            login.Show();
-
+                            MessageBox.Show("密码修改成功!");
                         }
                     }
                 }
